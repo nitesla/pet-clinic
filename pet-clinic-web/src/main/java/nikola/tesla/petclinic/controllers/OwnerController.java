@@ -1,16 +1,16 @@
 package nikola.tesla.petclinic.controllers;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
 @Controller
-@RequestMapping("/vets")
-public class VetController {
+@RequestMapping("/owners")
+public class OwnerController {
 
     @RequestMapping({"", "/", "/index", "/index.html"})
-    public String listVets(){
+    public String listOwners(){
 
-        return "vets/index";
+        return "owners/index";
     }
 }
